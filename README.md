@@ -7,13 +7,13 @@ Arch Linux + Sway (Wayland). Includes: sway, foot, fuzzel, fish, DankMaterialShe
 Base packages (official repo):
 
 ```sh
-sudo pacman -S --needed sway swaybg swayidle swaylock foot fuzzel fish vim thunar firefox ly ttf-jetbrains-mono-nerd papirus-icon-theme
+sudo pacman -S --needed sway foot fuzzel fish vim thunar firefox ly ttf-jetbrains-mono-nerd papirus-icon-theme
 ```
 
 AUR (via yay):
 
 ```sh
-yay -S --needed autotiling azote quickshell-git matugen-bin dgop-bin dms-shell-git ttf-azeret-mono
+yay -S --needed autotiling azote quickshell-git matugen-bin dgop-bin dms-shell-git
 ```
 
 Deploy configs:
@@ -23,7 +23,7 @@ cp -rT .config ~/.config && sed -i "s|HOME_PLACEHOLDER|$HOME|g" ~/.config/DankMa
 ```
 
 ```sh
-cp -rT .local ~/.local
+cp -rT .local ~/.local && fc-cache -f
 ```
 
 ```sh
