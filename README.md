@@ -26,10 +26,6 @@ cp -rT .config ~/.config && sed -i "s|HOME_PLACEHOLDER|$HOME|g" ~/.config/DankMa
 cp -rT .local ~/.local && fc-cache -f
 ```
 
-```sh
-sudo cp -rT etc /etc
-```
-
 GTK dark theme:
 
 ```sh
