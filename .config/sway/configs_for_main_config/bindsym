@@ -142,3 +142,6 @@ bindsym $mod+r mode "resize"
     # Screenshot region -> clipboard
     bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
     bindsym Print exec grim -g "$(slurp)" - | wl-copy
+
+    # Keybinds cheatsheet (Super+Alt)
+    bindsym --release $mod+Alt_L exec $HOME/.config/sway/keys.sh
