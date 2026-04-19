@@ -138,3 +138,7 @@ bindsym $mod+r mode "resize"
 #
     # Clipboard history (DMS)
     bindsym $mod+v exec dms ipc clipboard toggle
+
+    # Screenshot region -> clipboard
+    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
+    bindsym Print exec grim -g "$(slurp)" - | wl-copy
