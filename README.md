@@ -7,7 +7,7 @@ Arch Linux + Sway (Wayland). Includes: sway, foot, fuzzel, fish, DankMaterialShe
 Base packages (official repo):
 
 ```sh
-sudo pacman -S --needed sway foot fuzzel fish vim thunar firefox ly ttf-jetbrains-mono-nerd papirus-icon-theme
+sudo pacman -S --needed sway swaybg foot fuzzel fish vim thunar firefox ly ttf-jetbrains-mono-nerd papirus-icon-theme
 ```
 
 AUR (via yay):
