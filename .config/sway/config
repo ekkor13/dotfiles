@@ -1,0 +1,10 @@
+include ~/.config/sway/configs_for_main_config/variables
+include ~/.config/sway/configs_for_main_config/bindsym
+include ~/.config/sway/configs_for_main_config/output
+include ~/.config/sway/configs_for_main_config/input
+include ~/.config/sway/configs_for_main_config/basic
+include /etc/sway/config.d/*
+
+exec dbus-update-activation-environment --systemd --all
+exec systemctl --user start sway-session.target
+exec_always autotiling

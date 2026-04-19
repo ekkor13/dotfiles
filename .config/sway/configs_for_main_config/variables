@@ -1,0 +1,11 @@
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term foot
+#set $menu rofi -show drun 
+set $menu fuzzel
+set $browser firefox
+set $file_manager thunar
+set $editor vim            

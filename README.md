@@ -1,10 +1,43 @@
 # dotfiles
 
-Arch Linux + Sway (Wayland). Включает: sway, foot, fuzzel, fish, DankMaterialShell, ly.
+Arch Linux + Sway (Wayland). Includes: sway, foot, fuzzel, fish, DankMaterialShell, ly.
 
-## Установка
+## Install
+
+Base packages (official repo):
 
 ```sh
-yay -S --needed sway swaybg swayidle swaylock autotiling foot fuzzel fish vim thunar firefox ly azote quickshell-git matugen-bin dgop-bin dms-shell-git
-cp -rT .config ~/.config && cp -rT .local ~/.local && sudo cp -rT etc /etc && dconf load /org/gnome/desktop/interface/ < dconf/interface.ini
+sudo pacman -S --needed sway swaybg swayidle swaylock foot fuzzel fish vim thunar firefox ly
+```
+
+AUR (via yay):
+
+```sh
+yay -S --needed autotiling azote quickshell-git matugen-bin dgop-bin dms-shell-git
+```
+
+Deploy configs:
+
+```sh
+cp -rT .config ~/.config
+```
+
+```sh
+cp -rT .local ~/.local
+```
+
+```sh
+sudo cp -rT etc /etc
+```
+
+GTK dark theme:
+
+```sh
+dconf load /org/gnome/desktop/interface/ < dconf/interface.ini
+```
+
+Enable ly on boot:
+
+```sh
+sudo systemctl enable ly.service
 ```
